@@ -6,8 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import { createTheme } from '@mui/material';
 import { ThemeProvider } from '@mui/material';
 
-// a comment in here (index.tsx)
-
 const darkTheme = createTheme({
     palette: {
         mode: 'dark'

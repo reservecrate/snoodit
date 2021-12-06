@@ -45,6 +45,14 @@ export class AppService {
         author: 'reservecrate',
         score: 63,
       },
+      {
+        title: 'Post 6',
+        content: 'Content 6',
+        flair: 'Gameplay',
+        domain: 'v.redd.it',
+        author: 'ratiotile',
+        score: 92,
+      },
     ];
   }
 }

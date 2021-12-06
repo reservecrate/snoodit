@@ -23,7 +23,7 @@ const Feed = () => {
         }
     ]);
     useEffect(() => {
-        fetch('http://localhost:5000/posts')
+        fetch('http://localhost:3001')
             .then(res => res.json())
             .then(postsData => setPosts(postsData));
     }, []);

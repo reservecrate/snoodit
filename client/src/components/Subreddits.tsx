@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, Stack } from '@mui/material';
+import { Link, Stack , Divider} from '@mui/material';
 
 const Subreddits = () => {
     const [subreddits, setSubreddits] = useState([
@@ -7,10 +7,24 @@ const Subreddits = () => {
         'gaming',
         'minecraft',
         'apexlegends',
-        'programmerhumor'
+        'programmerhumor',
+        'learnprogramming',
+        'javascript',
+        'apexoutlands',
+        'outoftheloop',
+        'memes',
+        'dankmemes',
+        'programming'
     ]);
     return (
-        <Stack direction='row' justifyContent='space-evenly'>
+        <>
+        <Stack
+            direction='row'
+            justifyContent='space-evenly'
+            sx={{
+                py: '.5em'
+            }}
+        >
             {subreddits.map(subreddit => {
                 return (
                     <Link
@@ -22,6 +36,8 @@ const Subreddits = () => {
                 );
             })}
         </Stack>
+        <Divider />
+        </>
     );
 };
 
