@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from 'react';
 import { Grid, Card, CardActionArea, Stack } from '@mui/material';
 import Score from './Score';
 import Thumbnail from './Thumbnail';
@@ -13,15 +14,26 @@ interface IPost {
 }
 
 const Post = ({ post }: { post: IPost }) => {
+    // const history = useHistory();
+    const elementRef = useRef();
     const { title, content, flair, author, domain, score } = post;
-    // const handleMouseOver = (
-    //     e: React.MouseEvent<HTMLDivElement, MouseEvent>
-    // ) => {
-    //     console.log('gt');
-    //     e.target.
+    // const routeChange = () => {
+    //     let path = `newPath`;
+    //     history.push(path);
     // };
+    const [mouseHover, setMouseHover] = useState(false);
+    useEffect(() => {
+        console.log('hello');
+        if (mouseHover) {
+        }
+    }, [mouseHover]);
     return (
-        <Grid item>
+        <Grid
+            item
+            onMouseEnter={() => setMouseHover(true)}
+            onMouseLeave={() => setMouseHover(false)}
+            // ref={elementRef}
+        >
             <Card>
                 <CardActionArea>
                     <Stack direction='row' alignItems='center'>

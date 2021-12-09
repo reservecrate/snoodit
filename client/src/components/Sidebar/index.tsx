@@ -1,11 +1,7 @@
-import { Stack } from "@mui/material"
+import { Stack } from '@mui/material';
 
 const Sidebar = () => {
-    return (
-        <Stack>
-            
-        </Stack>
-    )
-}
+    return <Stack></Stack>;
+};
 
-export default Sidebar
+export default Sidebar;

@@ -4,6 +4,7 @@ import Subreddits from './Subreddits';
 import Banner from './Banner';
 import Navbar from './Navbar';
 import Feed from './Feed';
+import Footer from './Footer';
 
 const App = () => {
     return (
@@ -12,6 +13,7 @@ const App = () => {
             {/* <Banner /> */}
             <Navbar />
             <Feed />
+            <Footer />
         </div>
     );
 };
