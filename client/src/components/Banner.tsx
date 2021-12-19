@@ -5,7 +5,7 @@ const BannerImg = styled('img')({});
 const Banner = () => {
     return (
         <BannerImg
-            src='https://www.upcomer.com/wp-content/uploads/2021/10/Storm-Point.jpg'
+            src='https://wallpapercave.com/wp/wp5442980.jpg'
             alt='banner'
         />
     );

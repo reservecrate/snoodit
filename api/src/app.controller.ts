@@ -7,7 +7,7 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  getHello(): IPost[] {
-    return this.appService.getHello();
+  getPosts(): IPost[] {
+    return this.appService.getPosts();
   }
 }

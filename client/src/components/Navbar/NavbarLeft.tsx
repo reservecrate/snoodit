@@ -4,11 +4,13 @@ import { styled, SxProps } from '@mui/system';
 const HeaderImg = styled('img')({
     maxWidth: '2.5em',
     maxHeight: '2.5em',
-    borderRadius: '50%'
+    borderRadius: '50%',
+    mx: '.25em'
 });
 
 const styles: SxProps = {
-    ml: '.25em'
+    mx: '.25em',
+    color: '#ce93d8'
 };
 
 const NavbarLeft = () => {

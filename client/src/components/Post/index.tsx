@@ -23,7 +23,6 @@ const Post = ({ post }: { post: IPost }) => {
     // };
     const [mouseHover, setMouseHover] = useState(false);
     useEffect(() => {
-        console.log('hello');
         if (mouseHover) {
         }
     }, [mouseHover]);
@@ -34,7 +33,7 @@ const Post = ({ post }: { post: IPost }) => {
             onMouseLeave={() => setMouseHover(false)}
             // ref={elementRef}
         >
-            <Card>
+            <Card sx={{ bgcolor: '#2D3748', color: '#fff' }}>
                 <CardActionArea>
                     <Stack direction='row' alignItems='center'>
                         <Score score={score} />

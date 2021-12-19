@@ -10,7 +10,7 @@ const DetailsTop = ({ detailsTop }: { detailsTop: IDetailsTop }) => {
     const { flair, title, domain } = detailsTop;
     return (
         <Stack direction='row' alignItems='center'>
-            <Chip label={flair} />
+            <Chip label={flair} sx={{ color: '#E2E8F0' }} />
             <Typography variant='h6' sx={{ ml: '.25em' }}>
                 {title}
             </Typography>

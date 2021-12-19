@@ -6,7 +6,7 @@ import Monetization from './Monetization';
 
 const FooterTop = () => {
     return (
-        <Stack direction='row' justifyContent='center' alignItems='flex-start'>
+        <Stack direction='row' justifyContent='center' alignItems='flex-start' sx={{mt: '1em'}}>
             <About />
             <Help />
             <Apps />

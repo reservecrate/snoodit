@@ -1,8 +1,9 @@
-import { Stack, Typography } from '@mui/material';
+import { Stack, Typography, Link } from '@mui/material';
 import { SxProps } from '@mui/system';
 
 const styles: SxProps = {
-    ml: '.5em'
+    mx: '.25em',
+    color: '#00FFFF'
 };
 
 const Utilities = () => {
@@ -16,11 +17,13 @@ const Utilities = () => {
     ];
     return (
         <Stack direction='row' alignItems='center'>
-            <Typography variant='body2'>69 comments</Typography>
+            <Typography variant='body2' sx={{ mr: '.25em' }}>
+                69 comments
+            </Typography>
             {utilities.map(utility => (
-                <Typography variant='body2' color='text.secondary' sx={styles}>
+                <Link underline='hover' sx={styles}>
                     {utility}
-                </Typography>
+                </Link>
             ))}
         </Stack>
     );

@@ -1,8 +1,7 @@
-# Title
-Snoodit
+# Snoodit
 
 ## Description 
-Snoodit is a MRN stack (MongoDB, React, NestJS) web-based Reddit reader.
-It's an alternative to reddit.com built with the MaterialUI component library, but the layout is based on the old Reddit design (old.reddit.com). 
+Snoodit is a web-based MRN^2 stack (MongoDB, React, Node, NestJS) Reddit client.
+It's an alternative to reddit.com built with MaterialUI , and the layout is based on the old Reddit design (old.reddit.com). 
 
 

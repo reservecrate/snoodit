@@ -31,7 +31,7 @@ const NavbarRight = () => {
                     <CircleIcon sx={{ color: '#00FF7F', mx: '.25em' }} />
                 </Tooltip>
                 <Tooltip title='post karma'>
-                    <Chip label='282' sx={{ ml: '0' }} />
+                    <Chip label='1082' sx={{ color: '#E2E8F0', ml: '0' }} />
                 </Tooltip>
             </Stack>
             <Divider orientation='vertical' />

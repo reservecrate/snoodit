@@ -26,19 +26,3 @@ const About = () => {
 };
 
 export default About;
-
-/*
-
-return elem === 'about' ? (
-                    <Link
-                        href={`https://redditinc.com/${elem}`}
-                        underline='hover'
-                    >
-                        {elem}
-                    </Link>
-                    ) : (
-                    <Link href={`https://redditinc.com/`} underline='hover'>
-                        {elem}
-                    </Link>
-                );  
-*/

@@ -21,14 +21,12 @@ const DetailsBottom = ({
     const { author } = detailsBottom;
     return (
         <Stack direction='row' alignItems='center'>
-            <Typography variant='body2' sx={{ color: 'text.secondary' }}>
-                submitted 2 hours ago by{' '}
-            </Typography>
+            <Typography variant='body2'>submitted 2 hours ago by </Typography>
             <Typography
                 variant='body2'
                 color='secondary'
                 component='span'
-                sx={styles}
+                sx={{ ...styles, color: '#5D3FD3' }}
             >
                 {author}
             </Typography>

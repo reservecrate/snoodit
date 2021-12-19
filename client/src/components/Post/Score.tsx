@@ -27,14 +27,18 @@ const Score = ({ score }: { score: number }) => {
     return (
         <Stack alignItems='center' sx={{ ml: '.5em' }}>
             <IconButton aria-label='upvote' onClick={handleUpvote}>
-                <ArrowUpwardIcon />
+                <ArrowUpwardIcon sx={{ color: '#E2E8F0' }} />
             </IconButton>
             {/* <IconButton> */}
-            <Chip label={scoreState} variant='outlined' />
+            <Chip
+                label={scoreState}
+                variant='outlined'
+                sx={{ color: '#E2E8F0' }}
+            />
             {/* </IconButton> */}
 
             <IconButton aria-label='downvote' onClick={handleDownvote}>
-                <ArrowDownwardIcon />
+                <ArrowDownwardIcon sx={{ color: '#E2E8F0' }} />
             </IconButton>
         </Stack>
     );

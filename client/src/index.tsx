@@ -9,9 +9,7 @@ import { ThemeProvider } from '@mui/material';
 const rootElement = document.getElementById('root');
 
 const darkTheme = createTheme({
-    palette: {
-        mode: 'dark'
-    }
+    palette: {}
 });
 
 render(

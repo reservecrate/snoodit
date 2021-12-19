@@ -3,7 +3,7 @@ import { IPost } from './interfaces';
 
 @Injectable()
 export class AppService {
-  getHello(): IPost[] {
+  getPosts(): IPost[] {
     return [
       {
         title: 'Post 1',
