@@ -5,4 +5,5 @@ export interface IPost {
   author: string;
   domain: string;
   score: number;
+  comments: string[];
 }

@@ -12,6 +12,13 @@ export class AppService {
         domain: 'self.apexlegends',
         author: 'reservecrate',
         score: 425,
+        comments: [
+          'a comment',
+          'second comment',
+          'third comment',
+          'fourth comment',
+          'and so on',
+        ],
       },
       {
         title: 'Post 2',
@@ -20,6 +27,13 @@ export class AppService {
         domain: 'self.apexlegends',
         author: 'reservecrate',
         score: 303,
+        comments: [
+          'a comment',
+          'second comment',
+          'third comment',
+          'fourth comment',
+          'and so on',
+        ],
       },
       {
         title: 'Post 3',
@@ -28,6 +42,14 @@ export class AppService {
         domain: 'self.apexlegends',
         author: 'reservecrate',
         score: 504,
+        comments: [
+          'a comment',
+          'second comment',
+          'third comment',
+          'fourth comment',
+          'and so on',
+          'some random comment',
+        ],
       },
       {
         title: 'Post 4',
@@ -36,6 +58,13 @@ export class AppService {
         domain: 'self.apexlegends',
         author: 'BreezeHash',
         score: 872,
+        comments: [
+          'a comment',
+          'second comment',
+          'third comment',
+          'fourth comment',
+          'and so on',
+        ],
       },
       {
         title: 'Post 5',
@@ -44,6 +73,13 @@ export class AppService {
         domain: 'i.redd.it',
         author: 'reservecrate',
         score: 63,
+        comments: [
+          'a comment',
+          'second comment',
+          'third comment',
+          'fourth comment',
+          'and so on',
+        ],
       },
       {
         title: 'Post 6',
@@ -52,6 +88,28 @@ export class AppService {
         domain: 'v.redd.it',
         author: 'ratiotile',
         score: 92,
+        comments: [
+          'a comment',
+          'second comment',
+          'third comment',
+          'fourth comment',
+          'and so on',
+        ],
+      },
+      {
+        title: 'Post 7',
+        content: 'Content 7',
+        flair: 'Gameplay',
+        domain: 'v.redd.it',
+        author: 'ratiotile',
+        score: 36,
+        comments: [
+          'a comment',
+          'second comment',
+          'third comment',
+          'fourth comment',
+          'and so on',
+        ],
       },
     ];
   }

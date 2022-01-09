@@ -8,18 +8,12 @@ const QuickLinks = () => {
                 <ListItem>
                     <Link underline='hover'>Report a Cheater</Link>
                 </ListItem>
-            </List>
-            <List>
                 <ListItem>
                     <Link underline='hover'>Report a Bug</Link>
                 </ListItem>
-            </List>
-            <List>
                 <ListItem>
                     <Link underline='hover'>Troubleshooting Crashes</Link>
                 </ListItem>
-            </List>
-            <List>
                 <ListItem>
                     <Link underline='hover'>Dev Bug Tracker</Link>
                 </ListItem>

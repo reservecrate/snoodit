@@ -9,6 +9,7 @@ interface IPost {
     author: string;
     domain: string;
     score: number;
+    comments: string[];
 }
 
 const Feed = () => {
@@ -19,18 +20,19 @@ const Feed = () => {
             flair: 'unknown',
             domain: 'reddit.com',
             author: 'unknown',
-            score: 0
+            score: 0,
+            comments: []
         }
     ]);
     useEffect(() => {
         fetch('http://localhost:3001')
-            .then(res => res.json())
-            .then(postsData => setPosts(postsData));
+            .then((res) => res.json())
+            .then((postsData) => setPosts(postsData));
     }, []);
 
     return (
         <Stack>
-            {posts.map(post => (
+            {posts.map((post) => (
                 <Post post={post} />
             ))}
         </Stack>

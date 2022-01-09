@@ -8,6 +8,7 @@ import Footer from './Footer';
 import { Stack } from '@mui/material';
 
 const App = () => {
+
     return (
         <Stack className='App'>
             <Subreddits />

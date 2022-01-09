@@ -6,22 +6,27 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 const Score = ({ score }: { score: number }) => {
     const [vote, setVote] = useState('');
     const [scoreState, setScoreState] = useState(score);
+    const [colorState, setColorState] = useState('#E2E8F0');
     const handleUpvote = () => {
         if (!vote || vote === 'down') {
             setScoreState(score + 1);
             setVote('up');
+            setColorState('#0FFF50');
         } else {
             setScoreState(score);
             setVote('');
+            setColorState('#E2E8F0');
         }
     };
     const handleDownvote = () => {
         if (!vote || vote === 'up') {
             setScoreState(score - 1);
             setVote('down');
+            setColorState('#DC143C');
         } else {
             setScoreState(score);
             setVote('');
+            setColorState('#E2E8F0');
         }
     };
     return (
@@ -33,7 +38,7 @@ const Score = ({ score }: { score: number }) => {
             <Chip
                 label={scoreState}
                 variant='outlined'
-                sx={{ color: '#E2E8F0' }}
+                sx={{ color: colorState }}
             />
             {/* </IconButton> */}
 

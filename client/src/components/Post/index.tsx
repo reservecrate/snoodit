@@ -11,12 +11,13 @@ interface IPost {
     author: string;
     domain: string;
     score: number;
+    comments: string[];
 }
 
 const Post = ({ post }: { post: IPost }) => {
     // const history = useHistory();
     const elementRef = useRef();
-    const { title, content, flair, author, domain, score } = post;
+    const { title, content, flair, author, domain, score, comments } = post;
     // const routeChange = () => {
     //     let path = `newPath`;
     //     history.push(path);
@@ -39,7 +40,7 @@ const Post = ({ post }: { post: IPost }) => {
                         <Score score={score} />
                         <Thumbnail />
                         <Details
-                            details={{ title, content, flair, author, domain }}
+                            details={{ title, content, flair, author, domain, comments }}
                         />
                     </Stack>
                 </CardActionArea>
