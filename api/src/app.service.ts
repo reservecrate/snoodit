@@ -111,6 +111,23 @@ export class AppService {
           'and so on',
         ],
       },
+      {
+        title: 'Post 8',
+        content: 'Content ',
+        flair: 'Gameplay',
+        domain: 'v.redd.it',
+        author: 'ratiotile',
+        score: 36,
+        comments: [
+          'a comment',
+          'second comment',
+          'third comment',
+          'fourth comment',
+          'and so on',
+          'if I was a rich man',
+          'yada yada yeedee da',
+        ],
+      },
     ];
   }
 }

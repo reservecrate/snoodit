@@ -6,11 +6,11 @@ const Help = () => {
             <Typography variant='h6' sx={{ color: '#fff' }}>
                 help
             </Typography>
-            <Link>site rules</Link>
-            <Link>Reddit help center</Link>
-            <Link>reddiquette</Link>
-            <Link>mod guidelines</Link>
-            <Link>contact us</Link>
+            <Link underline='hover'>site rules</Link>
+            <Link underline='hover'>Reddit help center</Link>
+            <Link underline='hover'>reddiquette</Link>
+            <Link underline='hover'>mod guidelines</Link>
+            <Link underline='hover'>contact us</Link>
         </Stack>
     );
 };

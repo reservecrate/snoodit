@@ -8,10 +8,11 @@ const UsefulLinks = () => {
     return (
         <Stack>
             <Downloads />
-            <Divider light={true} />
+            <Divider />
             <PatchNotes />
+            <Divider />
             <QuickLinks />
-            <Divider/>
+            <Divider />
             <RelatedSubreddits />
         </Stack>
     );

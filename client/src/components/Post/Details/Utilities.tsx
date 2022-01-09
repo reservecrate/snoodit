@@ -18,9 +18,9 @@ const Utilities = ({ comments }: { comments: string[] }) => {
     ];
     return (
         <Stack direction='row' alignItems='center'>
-            <Typography variant='body2' sx={{ mr: '.25em' }}>
+            <MUILink sx={{ mr: '.25em', color: 'yellow' }} underline='hover'>
                 {comments.length} comments
-            </Typography>
+            </MUILink>
             {utilities.map((utility) => (
                 <MUILink underline='hover' sx={styles}>
                     {utility}
@@ -29,5 +29,4 @@ const Utilities = ({ comments }: { comments: string[] }) => {
         </Stack>
     );
 };
-
 export default Utilities;
