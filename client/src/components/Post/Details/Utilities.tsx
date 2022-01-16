@@ -1,4 +1,4 @@
-import { Stack, Typography, Link as MUILink } from '@mui/material';
+import { Stack, Link as MUILink } from '@mui/material';
 import { SxProps } from '@mui/system';
 import { Link } from 'react-router-dom';
 
@@ -29,4 +29,5 @@ const Utilities = ({ comments }: { comments: string[] }) => {
         </Stack>
     );
 };
+
 export default Utilities;
